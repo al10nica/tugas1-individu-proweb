@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Corner</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        table{
+            width: 90%;
+            margin:auto
+        }
+table{
+    width: 90%;
+    margin:auto;
+    border-collapse: collapse;
+}
+        td {
+            border: 1px solid black;
+        }
+
+
+        /* HEADER */
+
+        .header img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+
+        }
+
+        .header h1 {
+            margin: 5px;
+        }
+
+
+        /* MENU */
+
+        .menu {
+            text-align: center;
+            padding: 15px;
+            background-color: rgb(236, 185, 185);
+        }
+
+        .menu a {
+            margin: 15px;
+            color: rgb(1, 1, 1);
+        }
+
+
+        /* SIDEBAR */
+
+        .sidebar {
+            width: 25%;
+            vertical-align: top;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-top: 5px;
+        }
+
+        .sidebar ul,
+        .sidebar ol {
+            line-height: 2;
+        }
+
+
+        /* CONTENT */
+
+        .content {
+            width: 75%;
+            vertical-align: top;
+            padding: 30px;
+        }
+
+        .content p {
+            line-height: 1.6;
+        }
+
+
+        /* BOOK BOX */
+
+        .book-list {
+            display: flex;
+            gap: 15px;
+        }
+
+        .book {
+            width: 30%;
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        .book h3 {
+            margin-top: 0;
+        }
+
+        .book h4 {
+            font-size: 13px;
+            font-weight: normal;
+        }
+
+
+        /* FOOTER */
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgb(236, 185, 185);
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <table>
+        <!-- HEADER -->
+        <tr>
+            <td colspan="2" class="header">
+
+                <img src="bookcorner.jpeg" alt="Book Corner">
+        
+            </td>
+        </tr>
+        <!-- MAIN MENU -->
+        <tr>
+            <td colspan="2" class="menu">
+
+                <a href="index.html">Home</a>
+
+                <a href="#books">Books</a>
+
+                <a href="#categories">Categories</a>
+
+                <a href="#contact">Contact</a>
+            </td>
+        </tr>
+
+
+        <!-- SIDEBAR -->
+        <tr>
+            <!-- SIDEBAR -->
+
+            <td class="sidebar">
+
+                <h2>Categories</h2>
+
+                <ul>
+                    <li>Fiction</li>
+                    <li>Romance</li>
+                    <li>Mystery</li>
+                    <li>Fantasy</li>
+                    <li>Science Fiction</li>
+                </ul>
+
+
+                <h2>Explore Books</h2>
+                <ol>
+                    <li>New Releases</li>
+                    <li>Best Sellers</li>
+                    <li>Popular Genres</li>
+                </ol>
+
+            </td>
+
+
+
+            <!-- CONTENT -->
+
+            <td class="content">
+
+                <h1>Welcome Readers!</h1>
+
+                <p>
+                    Book Corner is a space where readers can explore
+                    various book genres, discover new stories, and
+                    find the perfect book for their next reading list.
+                </p>
+
+
+                <h2 id="books">Most Read Today</h2>
+
+                <!-- BOOK BOX -->
+
+                <div class="book-list">
+
+
+                    <div class="book">
+                        <h3>Laut Bercerita</h3>
+                        <h4>By: Leila S. Chudori</h4>
+                        <p>
+                            The story of Laut and his friends,
+                            who fought for justice only to face
+                            abduction and loss.
+                        </p>
+
+                    </div>
+
+
+                    <div class="book">
+                        <h3>Namaku Alam</h3>
+                        <h4>By: Leila S. Chudori</h4>
+                        <p>
+                            The story of Alam trying to understand
+                            his family's past and looking for answers
+                            about his missing father.
+                        </p>
+
+                    </div>
+
+
+                    <div class="book">
+                        <h3>Hujan</h3>
+                        <h4>By: Tere Liye</h4>
+                        <p>
+                            The story of Lail navigating life after
+                            a massive disaster, a tale of loss,
+                            friendship, and love.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+                <h2 id="categories">Why Read Books?</h2>
+                <p>
+                    Reading books can increase our knowledge,
+                    improve our imagination, and help us discover
+                    new perspectives.
+                </p>
+
+
+                <h2 id="contact">Contact</h2>
+                <p>
+                    Want to explore more?
+                    Visit
+                    <a href="https://www.gramedia.com/" target="_blank">
+                        Gramedia
+                    </a>
+                    to find more information about books.
+                </p>
+
+            </td>
+
+        </tr>
+
+
+        <!-- FOOTER -->
+
+        <tr>
+        <td colspan="2" class="footer">
+            <p>
+                &copy; 2026 Book Corner.
+            </p>
+
+        </td>
+        
+        </tr>
+
+
+    </table>
+</body>
+</html>
