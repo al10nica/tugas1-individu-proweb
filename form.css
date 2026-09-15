@@ -1,0 +1,49 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #d28383;
+}
+
+fieldset {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+legend {
+    color: #dbd99f;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 8px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 250px;
+    padding: 6px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ef9c9c;
+    color: white;
+    border-radius: 5px;
+    
+}
+.pendidikan {
+    margin-left: 20px;
+}
