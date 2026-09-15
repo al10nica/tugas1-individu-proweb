@@ -8,16 +8,17 @@ body {
 h1 {
     text-align: center;
     color: #d28383;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 fieldset {
-    background-color: rgb(255, 255, 255);
+    background-color: #f8f7f4;
     margin-bottom: 15px;
     padding: 20px;
 }
 
 legend {
-    color: #dbd99f;
+    color: #d28383;
 }
 
 table {
