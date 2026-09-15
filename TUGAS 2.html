@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas2</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Form Keanggotaan</h1>
+    <form>
+        <fieldset>
+       <legend><B>Sign In</B></legend>
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="Username"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                <td>Konfirmasi Password</td>
+                <td><input type="password" name="Konfirmasi_Password"></td>
+                 </tr>
+            </table>
+    </fieldset>
+
+<fieldset>
+    <legend><b>Data Diri</b></legend>
+    <table>
+        <tr>
+            <td>Nama Lengkap</td>
+            <td><input type="text" name="Nama_Lengkap"></td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td><textarea name="Alamat"></textarea></td>
+        </tr>
+        <tr>
+            <td>NO HP</td>
+             <td><input type="text" name="NO_HP"></td>
+        </tr>
+        <tr>
+        <td>Pendidikan<select name="pendidikan">
+        <option value="SMA">SMA</option>
+        <option value="Mahasiswa">Mahasiswa</option>
+        <option value="Umum">Umum</option>
+            </select></td>
+        </tr>
+        <tr>
+                        <td>Jenis Kelamin</td>
+                        <td><input type="radio" name="Jenis_Kelamin" value="Pria">Pria 
+            
+                        <br><input type="radio" name="Jenis_Kelamin" value="Perempuan">Perempuan
+                        </td>
+                    </tr>
+         <tr>
+                        <td> Genre yang Disukai</td>
+                        <td>
+                            <input type="checkbox" name="Informasi" value="Fiksi">Fiksi <br>
+                            <input type="checkbox" name="Informasi" value="Horor">Horor <br>
+                            <input type="checkbox" name="Informasi" value="Komedi">Komedi <br>
+                            <input type="checkbox" name="Informasi" value="Romansa">Romansa
+                        </td>
+                    </tr>
+    </table>
+
+    
+</fieldset>
+        <input type="submit" value="Daftar">
+        <input type="reset" value="Reset">
+</form>
+</body>
+</html>
