@@ -1,181 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Book Corner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 20px;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
-        table{
-            width: 90%;
-            margin:auto
+
+        .navbar {
+            background-color: rgb(253, 209, 243);
+            padding: 20px 0;
+            border-bottom: 1px solid #b08ae9;
         }
-table{
-    width: 90%;
-    margin:auto;
-    border-collapse: collapse;
+
+        .hero-text h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
-        td {
-            border: 1px solid black;
+
+        .navbar-brand {
+            font-size: 28px;
+            font-weight: bold;
+            font-style: italic;
+            color: #222;
+            margin-left: 20px;
         }
 
-
-        /* HEADER */
-
-        .header img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            display: block;
-
+        .nav-link {
+            color: #555;
+            margin: 0 8px;
         }
 
-        .header h1 {
-            margin: 5px;
+        .btn-daftar {
+            color: #087ff5;
+            border: 1px solid #087ff5;
+            background: white;
+            padding: 8px 20px;
+            border-radius: 4px;
+            margin-left: 15px;
         }
 
-
-        /* MENU */
-
-        .menu {
-            text-align: center;
-            padding: 15px;
-            background-color: rgb(236, 185, 185);
+        .btn-masuk {
+            background: #087ff5;
+            color: white;
+            border: none;
+            padding: 9px 22px;
+            border-radius: 4px;
+            margin-left: 6px;
         }
 
-        .menu a {
-            margin: 15px;
-            color: rgb(1, 1, 1);
-        }
-
-
-        /* SIDEBAR */
-
-        .sidebar {
-            width: 25%;
-            vertical-align: top;
-            padding: 20px;
-        }
-
-        .sidebar h2 {
-            margin-top: 5px;
-        }
-
-        .sidebar ul,
-        .sidebar ol {
-            line-height: 2;
-        }
-
-
-        /* CONTENT */
-
-        .content {
-            width: 75%;
-            vertical-align: top;
-            padding: 30px;
-        }
-
-        .content p {
-            line-height: 1.6;
-        }
-
-
-        /* BOOK BOX */
-
-        .book-list {
+        .hero {
+            min-height: 500px;
             display: flex;
-            gap: 15px;
+            align-items: center;
+            padding: 20px 40px;
         }
 
-        .book {
-            width: 30%;
-            border: 1px solid black;
-            padding: 15px;
+        .hero-text {
+            padding-left: 20px;
         }
 
-        .book h3 {
-            margin-top: 0;
+        .hero-text p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
-        .book h4 {
-            font-size: 13px;
-            font-weight: normal;
+        .btn-mulai {
+            background: #269b55;
+            color: white;
+            border: none;
+            padding: 10px 17px;
+            border-radius: 4px;
         }
 
-
-        /* FOOTER */
-
-        .footer {
+        .hero-image {
             text-align: center;
-            padding: 15px;
-            background-color: #ecb9b9;
         }
 
-    </style>
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            height: 480px;
+            object-fit: contain;
+        }
 
+        .card-img-top {
+            height: 350px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
-
 <body>
-    <table>
-        <!-- HEADER -->
-        <tr>
-            <td colspan="2" class="header">
 
-                <img src="bookcorner.jpeg" alt="Book Corner">
-        
-            </td>
-        </tr>
-        <!-- MAIN MENU -->
-        <tr>
-            <td colspan="2" class="menu">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
 
-                <a href="index.html">Home</a>
+        <a class="navbar-brand" href="#">📚 Book Corner</a>
 
-                <a href="#books">Books</a>
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <a href="#categories">Categories</a>
+        <div class="collapse navbar-collapse" id="navbarScroll">
 
-                <a href="#contact">Contact</a>
-            </td>
-        </tr>
+            <ul class="navbar-nav me-auto my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Buku</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                        href="#"
+                        data-bs-toggle="dropdown">
+                        Daftar Tugas
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">TUGAS 1</a></li>
+                        <li><a class="dropdown-item" href="TUGAS 2.html">TUGAS 2</a></li>
+                        <li><a class="dropdown-item" href="TUGAS-3.html">TUGAS 3</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled">Kontak</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+            <button class="btn-daftar">Daftar</button>
+            <button class="btn-masuk">Masuk</button>
+            </div>
+
+        </div>
+    </div>
+</nav>
 
 
-        <!-- SIDEBAR -->
-        <tr>
-            <!-- SIDEBAR -->
+<!-- HERO -->
+<section class="hero">
+    <div class="container-fluid">
 
-            <td class="sidebar">
+        <div class="row align-items-center">
 
-                <h2>Categories</h2>
+            <div class="col-md-5 hero-text">
 
-                <ul>
-                    <li>Fiction</li>
-                    <li>Romance</li>
-                    <li>Mystery</li>
-                    <li>Fantasy</li>
-                    <li>Science Fiction</li>
-                </ul>
-
-                <h2>DAFTAR TUGAS</h2>
-                <a href="TUGAS 2.html">TUGAS 2</a>
-                <br><br>
-                <a href="TUGAS 3.html">TUGAS 3</a>
-
-                
-
-            </td>
-
-
-
-            <!-- CONTENT -->
-
-            <td class="content">
-
-                <h1>Welcome Readers!</h1>
+                <h1>
+                    Hi!<br>
+                    Welcome readers
+                </h1>
 
                 <p>
                     Book Corner is a space where readers can explore
@@ -183,88 +178,128 @@ table{
                     find the perfect book for their next reading list.
                 </p>
 
+                <button class="btn-mulai">
+                    Start
+                </button>
 
-                <h2 id="books">Most Read Today</h2>
+            </div>
 
-                <!-- BOOK BOX -->
+            <div class="col-md-7 hero-image">
+                <img src="buku.jpg" alt="Snoopy sedang membaca buku">
+            </div>
 
-                <div class="book-list">
-
-
-                    <div class="book">
-                        <h3>Laut Bercerita</h3>
-                        <h4>By: Leila S. Chudori</h4>
-                        <p>
-                            The story of Laut and his friends,
-                            who fought for justice only to face
-                            abduction and loss.
-                        </p>
-
-                    </div>
+        </div>
+    </div>
+</section>
 
 
-                    <div class="book">
-                        <h3>Namaku Alam</h3>
-                        <h4>By: Leila S. Chudori</h4>
-                        <p>
-                            The story of Alam trying to understand
-                            his family's past and looking for answers
-                            about his missing father.
-                        </p>
+<!-- CARD BUKU -->
+<section class="container py-5">
 
-                    </div>
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Books for you</h2>
+        <p class="text-secondary">
+            Recommended books to read & enjoy
+        </p>
+    </div>
 
+    <div class="row g-4">
 
-                    <div class="book">
-                        <h3>Hujan</h3>
-                        <h4>By: Tere Liye</h4>
-                        <p>
-                            The story of Lail navigating life after
-                            a massive disaster, a tale of loss,
-                            friendship, and love.
-                        </p>
+        <!-- CARD 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
 
-                    </div>
+                <img src="laut (2).jpg"
+                    class="card-img-top"
+                    alt="Buku Laut Bercerita">
 
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title fw-bold">
+                        Laut Bercerita
+                    </h5>
+
+                    <p class="card-text text-secondary">
+                        The story of Laut and his friends,
+                        who fought for justice only to face
+                        abduction and loss.
+                    </p>
+
+                    <a href="https://www.gramedia.com/products/laut-bercerita"
+                        class="btn btn-primary mt-auto">
+                        Lihat Buku
+                    </a>
 
                 </div>
-
-                <h2 id="categories">Why Read Books?</h2>
-                <p>
-                    Reading books can increase our knowledge,
-                    improve our imagination, and help us discover
-                    new perspectives.
-                </p>
+            </div>
+        </div>
 
 
-                <h2 id="contact">Contact</h2>
-                <p>
-                    Want to explore more?
-                    Visit
-                    <a href="https://www.gramedia.com/" target="_blank">
-                        Gramedia
+        <!-- CARD 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <img src="namaku-alam.jpg"
+                    class="card-img-top"
+                    alt="Buku Namaku Alam">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title fw-bold">
+                        Namaku Alam
+                    </h5>
+
+                    <p class="card-text text-secondary">
+                        The story of Alam trying to understand
+                        his family's past and looking for answers
+                        about his missing father.
+                    </p>
+
+                    <a href="https://www.gramedia.com/products/namaku-alam"
+                        class="btn btn-primary mt-auto">
+                        Lihat Buku
                     </a>
-                    to find more information about books.
-                </p>
 
-            </td>
-
-        </tr>
+                </div>
+            </div>
+        </div>
 
 
-        <!-- FOOTER -->
+        <!-- CARD 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
 
-        <tr>
-        <td colspan="2" class="footer">
-            <p>
-                &copy; 2026 Book Corner.
-            </p>
+                <img src="hujan.jpg"
+                    class="card-img-top"
+                    alt="Buku Hujan">
 
-        </td>
-        
-        </tr>
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title fw-bold">
+                        Hujan
+                    </h5>
+
+                    <p class="card-text text-secondary">
+                        The story of Lail navigating life after
+                        a massive disaster, a tale of loss,
+                        friendship, and love.
+                    </p>
+
+                    <a href="https://www.gramedia.com/products/hujan-2"
+                        class="btn btn-primary mt-auto">
+                        Lihat Buku
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 
-    </table>
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
